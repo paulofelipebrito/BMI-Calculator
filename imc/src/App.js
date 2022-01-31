@@ -23,27 +23,28 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Calculadora IMC</h1>
-      <span>Vamos calcular seu imc</span>
+      <h1>BMI Calculator</h1>
+      <span>Let's calculate your Body Mass Index</span>
 
       <div className="area-input">
+        
         <input 
         type="text" 
         className=""
-        placeholder="Peso em (kg) Ex: 90"
+        placeholder="Weight in (kg) e.g. 90"
         value={weight}
         onChange={ (event)=> setWeight(event.target.value)}
         />
         <input 
         type="text" 
         className=""
-        placeholder="Altura em (cm) Ex: 100"
+        placeholder="Height in (cm) e.g. 100"
         value={height}
         onChange={ (event)=> setHeight(event.target.value)}
         />
 
         <button onClick={handleClick}>
-          Calcular
+          Calculate
         </button>
 
       </div>
